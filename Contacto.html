@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CONTACTO &#128242;</title>
+	<link rel="stylesheet" href="Style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav class="Navegador-Fixed">
+	<ul>
+		<li>
+			<a href="Contacto.html">Contacto</a>
+		</li>
+		<li>
+			<a href="Nosotros.html">Nosotros</a>
+		</li>
+		<li>
+			<a href="Servicios.html">Servicios</a>
+		</li>
+		<li>
+			<a href="Galeria.html">Galeria</a>
+		</li>		
+		<li class="dropdown">
+			<a href="Obras.html" class="dropbtn">Obras</a>
+			<div class="dropdown-content">
+			<a href="#">PROYECTOS</a>
+			<a href="#">OBRAS EN CURSO</a>
+			<a href="#">OBRAS TERMINADAS</a>
+			</div>
+		</li>
+		<li class="Volver">
+			<a href="index.html">Volver al Inicio</a>
+		</li>
+	</ul>
+</nav>
+<div class="Contact">
+	<div class="Bienv">
+		<h1>CONTACTO</h1>
+			<h3>Bienvenidos, por favor completa el formulario y nos pondremos en contacto. Gracias</h3>
+	</div>
+	<div class="Form">
+		<form action="/action_page.php">
+			<label for="fname">Nombre</label><br>
+				<input type="text" id="fname" name="fname" placeholder="Maria Eugenia"><br>
+			<label for="lname">Apellido</label><br>
+				<input type="text" id="lname" name="lname" placeholder="Araujo"><br>
+			<label for="mail">Correo</label><br>
+				<input type="text" id="mail" name="mail" placeholder="marcita@gmail.com"><br>
+			<label for="celular">Numero de telefono</label><br>
+				<input type="number" id="number" name="number" placeholder="011 - 15 xxxx xxxx"><br>
+			<label for="country">Pais desde donde nos contactas</label><br>
+				<select id="country" name="country">
+					<option value="australia">Argentina</option>
+					<option value="canada">Chile</option>
+					<option value="canada">Colombia</option>
+					<option value="canada">Brasil</option>
+					<option value="canada">Paraguay</option>
+					<option value="canada">Uruguay</option>	      
+					<option value="usa">USA</option>
+					<option value="usa">Otro</option>
+				</select><br>
+			<label for="Consulta">Consulta:</label><br>
+				<textarea id="subject" name="subject" placeholder="Escriba aqui sus consultas..." style="height:80px""width:120px"></textarea>
+				<br><br>
+			<input type="reset" value="Limpiar">
+			<input type="submit" value="Enviar Formulario">
+		</form> 
+	</div>
+</div>
+<footer>
+	<div id="Logo">
+		<li><img src="img/Logo.png" alt=""> </li>
+	</div>
+	<div id="Datos-Contacto">
+		<p>+54 9 11 1530929827</p>
+		<p>Bella Vista, Buenos Aires, Argentina</p>
+		<p>info@gmail.com</p>
+	</div>
+	<div id="Sitio">
+			<ul>
+				<li><a href="Obras.html" target="_blank">Obras</a></li>
+				<li><a href="Galeria.html" target="_blank">Galeria de Imagenes</a></li>
+				<li><a href="Servicios.html" target="_blank">Servicios</a></li>
+			</ul>
+	</div>
+	<div id="RedesSociales">
+			<ul>
+				<li><a href='https://www.instagram.com/negropiola_/'  target="_blank">Instagram</a></li>
+				<li><a href='https://www.linkedin.com/in/lucas-ezequiel-gomez/'  target="_blank">LinkedIn</a></li>
+				<li><a href='https://www.youtube.com/' target="_blank">Canal de YouTube</a></li>
+			</ul>
+	</div>
+</footer>
+</body>
+</html>
