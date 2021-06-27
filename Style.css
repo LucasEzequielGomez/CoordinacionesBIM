@@ -79,6 +79,7 @@ nav ul .Volver{
     opacity: 0.7;
     display: flex;
     padding-top: 85vh;
+    padding-left: 0px;
   }
 
   .Container .slider{
@@ -232,6 +233,18 @@ footer{
     padding-top: 100px;
     padding-left: 5%;
     padding-bottom: 160px;
+  }
+
+  .Contact h3{
+    font-family: helvetica;
+    max-width: 90vw;
+    font-size: 250%;
+  }
+
+  .wrapper h3 {
+    font-weight: lighter;
+    font-size: medium;
+  }
 }
 @media(min-width:520px){
   .renders .contenedor{     
