@@ -232,7 +232,7 @@ ul li{
   list-style: none;
 }
 
-@media(min-width:320px)and(max-width:520px){
+@media(min-width:320px)and(max-width:519px){
   .Inicio {
     font-family: 'Staatliches', cursive;
     font-size: 100%;
@@ -273,7 +273,7 @@ ul li{
     font-size: medium;
   }
 }
-@media(min-width:520px)and(max-width:728px){
+@media(min-width:520px)and(max-width:727px){  /* Asi lo veo en mi celu*/
   .renders .contenedor{     
     grid-template-columns: repeat(2,50%);
   }
@@ -287,7 +287,7 @@ ul li{
     padding-bottom: 60px;
   }
 }
-@media(min-width:728px)and(max-width:1024px){
+@media(min-width:728px)and(max-width:1023px){
   .renders .contenedor{
     grid-template-columns: repeat(3,33.3%);
   }
@@ -302,7 +302,7 @@ ul li{
     padding-bottom: 60px;
   }
 }
-@media(min-width:1024px)and(max-width:1200px){
+@media(min-width:1024px)and(max-width:1199px){
   .renders .contenedor{
    grid-template-columns: repeat(4,25%);
   }
@@ -324,7 +324,7 @@ ul li{
   }
 
 }
-@media(min-width:1200px)and(max-width:1920px){
+@media(min-width:1200px)and(max-width:1919px){  /* Asi lo veo en la notebook*/
   .contenedor{
    width: 1200px;
   }
