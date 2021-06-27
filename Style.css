@@ -225,7 +225,14 @@ footer{
   padding-bottom: 2rem;
   font-family: 'Staatliches', cursive;
 }
-
+@media(min-width:320px){
+  .Inicio {
+    font-family: 'Staatliches', cursive;
+    font-size: 100%;
+    padding-top: 100px;
+    padding-left: 5%;
+    padding-bottom: 160px;
+}
 @media(min-width:520px){
   .renders .contenedor{     
     grid-template-columns: repeat(2,50%);
@@ -282,7 +289,6 @@ footer{
    width: 1200px;
   }
 }
-
 @media(min-width:1920px){   /* Asi lo veo en la compu del laburo*/
   .Inicio{
     font-family: 'Staatliches', cursive;
