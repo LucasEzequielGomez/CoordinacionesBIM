@@ -332,6 +332,13 @@ ul li{
 
 }
 @media(min-width:1200px){  /* Asi lo veo en la notebook*/
+  .Inicio{
+    font-family: 'Staatliches', cursive;
+    font-size: 200%;
+    padding-top: 100px;
+    padding-left: 10%;
+    padding-bottom: 160px;
+  }
   .contenedor{
    width: 1200px;
   }
