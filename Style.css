@@ -255,6 +255,7 @@ footer{
   ul.slider li h4 {
     padding: 5%;
     font-size: 120%;
+    max-width: 90%;
   }
   .Contact h3{
     font-family: helvetica;
