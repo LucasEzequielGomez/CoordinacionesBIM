@@ -235,6 +235,31 @@ footer{
     padding-bottom: 160px;
   }
 
+  ul.slider li {
+    text-align: left;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: darkgrey;
+    opacity: 0;
+    width: 100%;
+    height: auto;
+    transition: .5s;
+  }
+
+  ul.slider li h2 {
+    font-size: 175%;
+    padding-left: 5%;
+    text-align: left;
+    font-style: italic;
+    font-family: 'Staatliches', cursive;
+  }
+
+  ul.slider li h4 {
+    padding: 5%;
+    font-size: 120%;
+  }
+  
   .Contact h3{
     font-family: helvetica;
     max-width: 90vw;
