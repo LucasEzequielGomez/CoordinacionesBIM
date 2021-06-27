@@ -55,14 +55,6 @@ nav ul .Volver{
   float: left;
 }
 
-.IrArriba {
-  position: sticky;
-  width: 50px;
-  font-size:20px;
-  bottom:20px;
-  right:20px;
-}
-
 .Main{
   background-image: linear-gradient(to bottom, #FF962E, gainsboro);
 }
@@ -78,12 +70,14 @@ nav ul .Volver{
 .Container{
   background: url(img/1.jpg);
   padding: 20px;
+  height: 100vh;
   }
   
   .Container .Menu{
     list-style: none;
     opacity: 0.7;
     display: flex;
+    padding-top: 85vh;
   }
 
   .Container .slider{
@@ -92,7 +86,7 @@ nav ul .Volver{
     margin-bottom: 50px;
   }
   
-  .slider div {
+  ul.slider li{
     text-align: left;   
     position: absolute;
     left: 0px;
@@ -106,7 +100,7 @@ nav ul .Volver{
     padding-bottom: 20px;
   }
 
-  .slider h2 {
+  ul.slider li h2 {
     font-size: 300%;
     padding-left: 5%;
     text-align: left;
@@ -114,7 +108,7 @@ nav ul .Volver{
     font-family: 'Staatliches', cursive;
   }
 
-  .slider h4{
+  ul.slider li h4{
     padding-left: 5%;
     font-size: 150%;
     max-width: 50%;
@@ -133,7 +127,7 @@ nav ul .Volver{
   text-align: center;
   margin: 20px;
   background: none;
-  text-align: center;
+  justify-content: center;
 }
 
 .Contenedor{ 
@@ -266,6 +260,12 @@ footer{
   }
   .contenedor{
     width: 1024px;
+  }
+
+  .contenedor div img:hover{
+    width: 200%;
+    z-index: 1;
+    position: relative;
   }
 
   .wrapper {
