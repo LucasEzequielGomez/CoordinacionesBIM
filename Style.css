@@ -226,7 +226,7 @@ footer{
   padding-bottom: 2rem;
   font-family: 'Staatliches', cursive;
 }
-@media(min-width:320px){
+@media(min-width:320px)and(max-width:520px){
   .Inicio {
     font-family: 'Staatliches', cursive;
     font-size: 100%;
@@ -266,7 +266,7 @@ footer{
     font-size: medium;
   }
 }
-@media(min-width:520px){
+@media(min-width:520px)and(max-width:728px){
   .renders .contenedor{     
     grid-template-columns: repeat(2,50%);
   }
@@ -280,7 +280,7 @@ footer{
     padding-bottom: 60px;
   }
 }
-@media(min-width:728px){
+@media(min-width:728px)and(max-width:1024px){
   .renders .contenedor{
     grid-template-columns: repeat(3,33.3%);
   }
@@ -295,7 +295,7 @@ footer{
     padding-bottom: 60px;
   }
 }
-@media(min-width:1024px){
+@media(min-width:1024px)and(max-width:1200px){
   .renders .contenedor{
    grid-template-columns: repeat(4,25%);
   }
@@ -317,7 +317,7 @@ footer{
   }
 
 }
-@media(min-width:1200px){
+@media(min-width:1200px)and(max-width:1920px){
   .contenedor{
    width: 1200px;
   }
