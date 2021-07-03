@@ -8,6 +8,7 @@
 	<link rel="icon" href="icon/favicon.ico">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
 </head>
 <body>
 <nav class="Navegador-Fixed">
@@ -107,9 +108,11 @@
 		</li>
 	</ul>
 </div>
-<div id="Contact">
+<div id="Contact" class="wow animate__slideInDown">
+	<div class="wow tipoAnimacion">
 		<h1>CONTACTO</h1>
 		<h2>Estamos a su disposición para responder sus consultas.<a href="mailto:lucasgomezmmo@gmail.com">Envianos un mail,</a> respondemos en la brevedad.</h2>
+	</div>
 </div>
 <footer>
 	<div id="Logo">
@@ -137,5 +140,9 @@
 	</div>
 </footer>
 <!-- Esto es un comentario que no influye a la pagina -->
+<script src="js/wow.min.js"></script>
+<script>
+   new WOW().init(animate__slideInDown);
+</script>
 </body>
 </html>
