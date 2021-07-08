@@ -215,7 +215,7 @@ input[type=submit], input[type=reset] {
 }
 
 footer{
-  display: flex;
+  display: flex !important;
   flex-direction: row;
   flex-wrap: wrap;
   background-image: linear-gradient(to bottom, gainsboro, #68A4C4);
