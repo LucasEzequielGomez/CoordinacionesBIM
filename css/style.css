@@ -45,19 +45,12 @@ li a {
   font-size: 150%;
   color: #111;
 }
-  
-.Menu{
-  display: inline-block;
-  text-align: center;
-  margin: 20px;
-  background: none;
-  justify-content: center;
-}
 
 .Contenedor{ 
   width:100%;
   margin: auto;
 }
+
 img{
     width: 100%;
 }
@@ -65,9 +58,15 @@ img{
   background-color: rgb(0, 255, 136);
     margin: 5px; 
 }
+
+.contenedor{
+  width: 1200px;
+}
+
 .renders .contenedor{
   display: grid;
   margin: auto;
+  grid-template-columns: repeat(4,25%);
 }
 
 .wrapper {
@@ -76,6 +75,10 @@ img{
   background-color: gainsboro;
   padding-right: 20px;
   padding-left: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 70px;
+  grid-auto-rows: minmax(100px, auto);
+  padding-bottom: 60px;
 }
 
 #Text {
