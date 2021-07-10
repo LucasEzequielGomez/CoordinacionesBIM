@@ -4,7 +4,7 @@ body{
   margin: 0px;
 }
 
-.Navegador-Fixed ul {
+.navegador-Fixed ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@ body{
   background-color: black;
 }
 
-.Navegador-Fixed li {
+.navegador-Fixed li {
   float: right;
 }
 
@@ -46,7 +46,7 @@ li a {
   color: #111;
 }
 
-.Contenedor{ 
+.contenedor{ 
   width:100%;
   margin: auto;
 }
@@ -81,7 +81,7 @@ img{
   padding-bottom: 60px;
 }
 
-#Text {
+#text {
   grid-column: auto;
   grid-row: auto;
   text-align: center;
@@ -96,7 +96,7 @@ img{
   font-weight: normal;
 }
 
-.Contact{
+.contact{
   font-family: 'Staatliches', cursive;
   background-image: linear-gradient(to bottom, #48E8A0, gainsboro);
   display: flex;
@@ -106,18 +106,18 @@ img{
   justify-content: space-around;
 }
 
-.Contact h1{
+.contact h1{
   font-size: 400%;
 }
 
-.Contact h2{
+.contact h2{
   font-family: helvetica;
   max-width: 35vw;
   font-size: 175%;
 }
 
 
-#Contact{
+#contact{
   font-family: 'Staatliches', cursive;
   background-image: linear-gradient(to bottom, #48E8A0, gainsboro);
   display: flex;
@@ -127,11 +127,11 @@ img{
   justify-content: space-around;
 }
 
-#Contact h1{
+#contact h1{
   font-size: 400%;
 }
 
-#Contact h2{
+#contact h2{
   font-family: helvetica;
   max-width: 35vw;
   font-size: 150%;
@@ -191,12 +191,60 @@ ul li{
     margin: auto;
     grid-template-columns: repeat(1,100%);
   }
+  .wrapper {
+    font-family: 'Staatliches', cursive;
+    display: grid;
+    background-color: gainsboro;
+    padding-right: 20px;
+    padding-left: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 70px;
+    grid-auto-rows: minmax(100px, auto);
+    padding-bottom: 60px;
+  }
+
+  .contact h1{
+    font-size: 300%;
+  }
+  
+  .contact h2{
+    font-family: helvetica;
+    max-width: 85vw;
+    font-size: 150%;
+  }
+
+  div .form{
+    width: 90%;
+  }
+  div form{
+    background-color: #7848e8;
+    font-size: 120%;
+    width: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 10px 10px;
+  }
+  
+  div form label{
+    width: 100%;
+  }
 }
 @media(min-width:520px){  /* Asi lo veo en mi celu*/
   .renders .contenedor{
     display: grid;
     margin: auto;
     grid-template-columns: repeat(2,50%);
+  }
+  .wrapper {
+    font-family: 'Staatliches', cursive;
+    display: grid;
+    background-color: gainsboro;
+    padding-right: 20px;
+    padding-left: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 70px;
+    grid-auto-rows: minmax(100px, auto);
+    padding-bottom: 60px;
   }
 }
 @media(min-width:728px){
@@ -206,6 +254,17 @@ ul li{
     display: grid;
     margin: auto;
     grid-template-columns: repeat(3,33.33%);
+  }
+  .wrapper {
+    font-family: 'Staatliches', cursive;
+    display: grid;
+    background-color: gainsboro;
+    padding-right: 20px;
+    padding-left: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 70px;
+    grid-auto-rows: minmax(100px, auto);
+    padding-bottom: 60px;
   }
 }
 @media(min-width:1200px){  /* Asi lo veo en la notebook*/
