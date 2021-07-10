@@ -60,7 +60,7 @@ img{
 }
 
 .contenedor{
-  width: 1200px;
+  width: 95%;
 }
 
 .renders .contenedor{
@@ -186,14 +186,34 @@ ul li{
 }
 
 @media(min-width:320px){
+  .renders .contenedor{
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(1,100%);
+  }
 }
 @media(min-width:520px){  /* Asi lo veo en mi celu*/
+  .renders .contenedor{
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(2,50%);
+  }
 }
 @media(min-width:728px){
 }
 @media(min-width:1024px){
+  .renders .contenedor{
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(3,33.33%);
+  }
 }
 @media(min-width:1200px){  /* Asi lo veo en la notebook*/
+  .renders .contenedor{
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(4,25%);
+  }
 }
 @media(min-width:1920px){   /* Asi lo veo en la compu del laburo*/
 }
