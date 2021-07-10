@@ -177,15 +177,23 @@ footer{
   list-style: none;
 }
 
-/*footer .logo h1{
-  
-}*/
-
 ul li{
   list-style: none;
 }
 
 @media(min-width:320px){
+  .inicio{
+    font-family: 'Staatliches', cursive;
+    font-size: 150%;
+    padding-top: 33vh;
+    padding-left: 10%;
+    padding-bottom: 45vh;
+  }
+  
+  .home .inicio h1{
+    font-size: 120%;
+    color: #111;
+  }
   .renders .contenedor{
     display: grid;
     margin: auto;
@@ -230,6 +238,17 @@ ul li{
   }
 }
 @media(min-width:520px){  /* Asi lo veo en mi celu*/
+  .inicio{
+    font-family: 'Staatliches', cursive;
+    padding-top: 33vh;
+    padding-left: 10%;
+    padding-bottom: 33vh;
+  }
+  
+  .home .inicio h1{
+    font-size: 200%;
+    color: #111;
+  }
   .renders .contenedor{
     display: grid;
     margin: auto;
@@ -246,8 +265,40 @@ ul li{
     grid-auto-rows: minmax(100px, auto);
     padding-bottom: 60px;
   }
+
+  .contact{
+    font-family: 'Staatliches', cursive;
+    background-image: linear-gradient(to bottom, #48E8A0, gainsboro);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .contact h1{
+    font-size: 400%;
+  }
+  
+  .contact h2{
+    font-family: helvetica;
+    max-width: 35vw;
+    font-size: 175%;
+  }
 }
 @media(min-width:728px){
+  .inicio{
+    font-family: 'Staatliches', cursive;
+    font-size: 200%;
+    padding-top: 33vh;
+    padding-left: 10%;
+    padding-bottom: 33vh;
+  }
+  
+  .home .inicio h1{
+    font-size: 200%;
+    color: #111;
+  }
 }
 @media(min-width:1024px){
   .renders .contenedor{
