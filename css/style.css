@@ -194,6 +194,9 @@ ul li{
     font-size: 120%;
     color: #111;
   }
+  .inicio p{
+    font-size: large;
+  }
   .renders .contenedor{
     display: grid;
     margin: auto;
