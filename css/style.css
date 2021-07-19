@@ -190,6 +190,12 @@ input[type=submit], input[type=reset] {
   cursor: pointer;
 }
 
+.aform{
+  background-color: white;
+  margin: 20px 0px;
+  font-size: 1.5rem;
+}
+
 footer{
   display: flex !important;
   flex-direction: row;

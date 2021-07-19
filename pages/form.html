@@ -8,6 +8,8 @@
 	<link rel="stylesheet" href="../css/style.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+	<!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 	<nav class="navegador-Fixed navbar navbar-expand-md navbar-dark fixed-top bg-dark">
@@ -29,7 +31,15 @@
 			</li>
 		</ul>
 	</nav>
-<form>
+<form class="aform">
+	<div class="row">
+		<div class="col">
+		  <input type="text" class="form-control" placeholder="Nombre">
+		</div>
+		<div class="col">
+		  <input type="text" class="form-control" placeholder="Apellido">
+		</div>
+	</div>
 	<div class="form-group">
 	  <label for="formGroupExampleInput">Example label</label>
 	  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
@@ -46,21 +56,48 @@
 	  <label for="formGroupExampleInput2">Another label</label>
 	  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
 	</div>
-	<div class="custom-control custom-checkbox">
-		<input type="checkbox" class="custom-control-input" id="customCheck1">
-		<label class="custom-control-label" for="customCheck1">Modelado BIM</label>
+	<div><h4>¿Que servicios necesitas?</h4>
+		<div class="custom-control custom-checkbox">
+			<input type="checkbox" class="custom-control-input" id="customCheck1">
+			<label class="custom-control-label" for="customCheck1">Modelado Arquitectura</label>
+		</div>
+		<div class="custom-control custom-checkbox">
+			<input type="checkbox" class="custom-control-input" id="customCheck1">
+			<label class="custom-control-label" for="customCheck1">Modelado Estructural</label>
+		</div>
+		<div class="custom-control custom-checkbox">
+			<input type="checkbox" class="custom-control-input" id="customCheck1">
+			<label class="custom-control-label" for="customCheck1">Modelado MEP</label>
+		</div>
+		<div class="custom-control custom-checkbox">
+			<input type="checkbox" class="custom-control-input" id="customCheck1">
+			<label class="custom-control-label" for="customCheck1">Modelado Steel Frame </label>
+		</div>
+		<div class="custom-control custom-checkbox">
+			<input type="checkbox" class="custom-control-input" id="customCheck1">
+			<label class="custom-control-label" for="customCheck1">BIM 4D - Diagramacion</label>
+		</div>
+		<div class="custom-control custom-checkbox">
+			<input type="checkbox" class="custom-control-input" id="customCheck1">
+			<label class="custom-control-label" for="customCheck1">BIM 5D - Analisis de Costos</label>
+		</div>
+		<div class="custom-control custom-checkbox">
+			<input type="checkbox" class="custom-control-input" id="customCheck1">
+			<label class="custom-control-label" for="customCheck1">BIM 6D - Sustentabilidad</label>
+		</div>
+		<div class="custom-control custom-checkbox">
+			<input type="checkbox" class="custom-control-input" id="customCheck1">
+			<label class="custom-control-label" for="customCheck1">BIM 7D - Facility Managment</label>
+		</div>
 	</div>
-	<div class="custom-control custom-checkbox">
-		<input type="checkbox" class="custom-control-input" id="customCheck1">
-		<label class="custom-control-label" for="customCheck1">Cruce de Ingenierías y Detección de Conflictos Constructivos</label>
+	<div><h4>Dimensiones estimadas del proyecto</h4>
+	<div class="custom-control custom-radio">
+		<input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+		<label class="custom-control-label" for="customRadio1">Proyecto menor a 200m²</label>
 	</div>
-	<div class="custom-control custom-checkbox">
-		<input type="checkbox" class="custom-control-input" id="customCheck1">
-		<label class="custom-control-label" for="customCheck1">Control de Volumetrías y Catálogo de Conceptos</label>
-	</div>
-	<div class="custom-control custom-checkbox">
-		<input type="checkbox" class="custom-control-input" id="customCheck1">
-		<label class="custom-control-label" for="customCheck1">Modelado conforme a obra</label>
+	<div class="custom-control custom-radio">
+		<input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+		<label class="custom-control-label" for="customRadio1">Proyecto menor a 500m²</label>
 	</div>
 	<div class="custom-control custom-radio">
 		<input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
@@ -70,9 +107,20 @@
 		<input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
 		<label class="custom-control-label" for="customRadio2">Proyecto mayor a 1000m²</label>
 	</div>
-	<div class="custom-file">
-		<input type="file" class="custom-file-input" id="customFile">
-		<label class="custom-file-label" for="customFile">Choose file</label>
+	<div class="custom-control custom-radio">
+		<input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+		<label class="custom-control-label" for="customRadio2">Proyecto mayor a 2000m²</label>
+	</div>
+	<div class="custom-control custom-radio">
+		<input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+		<label class="custom-control-label" for="customRadio2">Proyecto mayor a 5000m²</label>
+	</div>
+	</div>
+	<div><h4>Adjuntanos archivos de referencia</h4>
+		<div class="custom-file">
+			<input type="file" class="custom-file-input" id="customFile">
+			<label class="custom-file-label" for="customFile">Choose file</label>
+		</div>
 	</div>
 	<input type="submit" value="Enviar">
 </form>
