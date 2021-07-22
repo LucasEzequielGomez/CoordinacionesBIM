@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MODELOS BIM</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="icon" href="icon/favicon.ico">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+	<!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navegador-Fixed">
+		<ul>
+			<li>
+				<a href="contacto.html">Contacto</a>
+			</li>
+			<li>
+				<a href="servicios.html">Servicios</a>
+			</li>
+			<li>
+				<a href="galeria.html">Galeria</a>
+			</li>		
+			<li>
+				<a href="obras.html">Obras</a>
+			</li>
+			<li class="form-inline mt-2 mt-md-0 Volver">
+				<a href="../index.html">Volver al Inicio</a>
+			</li>
+		</ul>
+	</nav>
+  <!-- Import the component -->
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+<model-viewer
+    src="https://cdn.glitch.com/adbfd991-f367-4ccb-95c1-56d23189f777%2Fcasarial.glb?v=1626914794844"
+    camera-controls
+    ar
+    ar-modes="scene-viewer webxr quick-look"
+    ios-src="https://cdn.glitch.com/adbfd991-f367-4ccb-95c1-56d23189f777%2F%D0%94%D0%BE%D0%BC_%D0%A1%D0%BE%D0%B2%D0%B5%D1%82%D0%BE%D0%B2_%D0%9A%D0%B0%D0%BB%D0%B8%D0%BD%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4__House_of_Soviets.usdz?v=1626914908755"
+    shadow-intensity="6.4"
+    shadow-softness="1"
+  >
+    <div class="progress-bar hide" slot="progress-bar">
+      <div class="update-bar"></div>
+    </div>
+  </model-viewer>
+  <footer>
+	<div id="logo">
+		<h1>LUCAS GOMEZ</h1>
+	</div>
+	<div>
+		<p>+54 9 11 1530929827</p>
+		<p>Bella Vista, Buenos Aires, Argentina</p>
+		<p>info@gmail.com</p>
+	</div>
+	<div>
+		<ul>
+			<li><a href="obras.html" target="_blank">Obras</a></li>
+			<li><a href="galeria.html" target="_blank">Galeria de Imagenes</a></li>
+			<li><a href="servicios.html" target="_blank">Servicios</a></li>
+			<li><a href="contacto.html">Contacto</a></li>
+		</ul>
+	</div>
+	<div>
+		<ul>
+			<li><a href='https://www.instagram.com/negropiola_/'  target="_blank">Instagram</a></li>
+			<li><a href='https://www.linkedin.com/in/lucas-ezequiel-gomez/'  target="_blank">LinkedIn</a></li>
+			<li><a href='https://www.youtube.com/' target="_blank">Canal de YouTube</a></li>
+			<li><a href='https://twitter.com/?lang=es' target="_blank">Twitter</a></li>
+		</ul>
+	</div>
+</footer>
+<!-- Esto es un comentario que no influye a la pagina -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="assets/js/vendor/popper.min.js"></script>
+<script src="dist/js/bootstrap.min.js"></script>
+</body>
+</html>

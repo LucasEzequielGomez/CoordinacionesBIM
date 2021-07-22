@@ -196,6 +196,14 @@ input[type=submit], input[type=reset] {
   font-size: 1.5rem;
 }
 
+model-viewer{
+  display: block;
+  position: relative;
+  contain: strict;
+  width: 85vw;
+  height: 85vh;
+}
+
 footer{
   display: flex !important;
   flex-direction: row;
