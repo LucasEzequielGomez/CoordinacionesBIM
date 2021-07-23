@@ -1,0 +1,42 @@
+.wrapper {
+    font-family: 'Staatliches', cursive;
+    display: grid;
+    background-color: gainsboro;
+    padding-right: 20px;
+    padding-left: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 70px;
+    grid-auto-rows: minmax(100px, auto);
+    padding-bottom: 60px;
+  }
+  
+  #text {
+    grid-column: auto;
+    grid-row: auto;
+    text-align: center;
+  }
+  
+  .wrapper h2{
+    font-size: 140%;
+    justify-content: center;
+  }
+  
+  .wrapper h3{
+    font-weight: normal;
+  }
+
+
+
+  @media(min-width:320px) and (max-width:519px){
+    .wrapper {
+        font-family: 'Staatliches', cursive;
+        display: grid;
+        background-color: gainsboro;
+        padding-right: 20px;
+        padding-left: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 70px;
+        grid-auto-rows: minmax(100px, auto);
+        padding-bottom: 60px;
+      }
+    }
