@@ -1,4 +1,97 @@
+.contact{
+  font-family: 'Staatliches', cursive;
+  background-image: linear-gradient(to bottom, #48E8A0, gainsboro);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .contact h1{
+  font-size: 400%;
+}
+
+.contact h2{
+  font-family: helvetica;
+  max-width: 35vw;
+  font-size: 175%;
+}
+
+
+#contact{
+  font-family: 'Staatliches', cursive;
+  background-image: linear-gradient(to bottom, #48E8A0, gainsboro);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#contact h1{
+  font-size: 400%;
+}
+
+#contact h2{
+  font-family: helvetica;
+  max-width: 35vw;
+  font-size: 150%;
+}
+
+div form{
+  background-color: #7848e8;
+  font-size: 120%;
+  width: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 10px 10px;
+}
+
+div form label{
+  width: 100%;
+}
+
+input[type=submit], input[type=reset] {
+  background-color: #FF962E;
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  text-decoration: none;
+  margin: 4px;
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+.aform{
+  background-color: white;
+  margin: 20px 0px;
+  font-size: 1.5rem;
+}
+@media(min-width:320px) and (max-width:519px){
+  .inicio{
+    font-family: 'Staatliches', cursive;
+    font-size: 150%;
+    padding-top: 33vh;
+    padding-left: 10%;
+    padding-bottom: 45vh;
+  }
+  
+  .home .inicio h1{
+    font-size: 120%;
+    color: #111;
+  }
+  .inicio p{
+    font-size: large;
+  }
+  .renders .contenedor{
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(1,100%);
+  }
+  
+
+  .contact h1{
     font-size: 300%;
   }
   
@@ -23,3 +116,25 @@
   div form label{
     width: 100%;
   }
+}
+@media(min-width:520px){
+  .contact{
+    font-family: 'Staatliches', cursive;
+    background-image: linear-gradient(to bottom, #48E8A0, gainsboro);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .contact h1{
+    font-size: 400%;
+  }
+
+  .contact h2{
+    font-family: helvetica;
+    max-width: 35vw;
+    font-size: 175%;
+  }
+}
