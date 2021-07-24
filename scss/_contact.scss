@@ -7,18 +7,14 @@
   align-items: center;
   justify-content: space-around;
 }
-
 .contact h1{
   font-size: 400%;
 }
-
 .contact h2{
   font-family: helvetica;
-  max-width: 35vw;
+  max-width: 30vw;
   font-size: 175%;
 }
-
-
 #contact{
   font-family: 'Staatliches', cursive;
   background-image: linear-gradient(to bottom, #48E8A0, gainsboro);
@@ -32,26 +28,22 @@
 #contact h1{
   font-size: 400%;
 }
-
 #contact h2{
   font-family: helvetica;
   max-width: 35vw;
   font-size: 150%;
 }
-
 div form{
   background-color: #7848e8;
-  font-size: 120%;
-  width: auto;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  font-size: 1.5rem;
+  width: 30vw;
+  margin-top: 20%;
+  margin-bottom: 20%;
   padding: 10px 10px;
 }
-
 div form label{
   width: 100%;
 }
-
 input[type=submit], input[type=reset] {
   background-color: #FF962E;
   border: none;
@@ -62,45 +54,20 @@ input[type=submit], input[type=reset] {
   margin-left: 4px;
   cursor: pointer;
 }
-
 .aform{
   background-color: white;
   margin: 20px 0px;
   font-size: 1.5rem;
 }
 @media(min-width:320px) and (max-width:519px){
-  .inicio{
-    font-family: 'Staatliches', cursive;
-    font-size: 150%;
-    padding-top: 33vh;
-    padding-left: 10%;
-    padding-bottom: 45vh;
-  }
-  
-  .home .inicio h1{
-    font-size: 120%;
-    color: #111;
-  }
-  .inicio p{
-    font-size: large;
-  }
-  .renders .contenedor{
-    display: grid;
-    margin: auto;
-    grid-template-columns: repeat(1,100%);
-  }
-  
-
   .contact h1{
     font-size: 300%;
   }
-  
   .contact h2{
     font-family: helvetica;
     max-width: 85vw;
     font-size: 150%;
   }
-
   div .form{
     width: 90%;
   }
@@ -112,7 +79,6 @@ input[type=submit], input[type=reset] {
     margin-bottom: 60px;
     padding: 10px 10px;
   }
-  
   div form label{
     width: 100%;
   }
@@ -127,11 +93,9 @@ input[type=submit], input[type=reset] {
     align-items: center;
     justify-content: space-around;
   }
-
   .contact h1{
     font-size: 400%;
   }
-
   .contact h2{
     font-family: helvetica;
     max-width: 35vw;

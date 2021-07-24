@@ -34,19 +34,19 @@
 			<h2>Bienvenidos, por favor completa el formulario y nos pondremos en contacto. Proporciona algunos datos sobre tu proyecto y objetivos, y seguiremos la conversación a partir de allí.</h2>
 	</div>
 	<div class="form">
-		<form action="/action_page.php">
-			<label for="fname">Nombre</label><br>
-				<input type="text" id="fname" name="fname" placeholder="Maria Eugenia"><br>
+		<form action="../enviar.php">
+			<label for="nombre">Nombre</label><br>
+				<input type="text" id="fname" name="nombre" placeholder="Maria Eugenia"><br>
 			<label for="lname">Apellido</label><br>
-				<input type="text" id="lname" name="lname" placeholder="Araujo"><br>
+				<input type="text" id="lname" name="apellido" placeholder="Araujo"><br>
 			<label for="mail">Email Corporativo</label><br>
 				<input type="text" id="mail" name="mail" placeholder="marcita@gmail.com"><br>
 			<label for="celular">Numero de telefono</label><br>
-				<input type="number" id="number" name="number" placeholder="011 - 15 xxxx xxxx"><br>
+				<input type="number" id="number" name="numero" placeholder="011 - 15 xxxx xxxx"><br>
 			<label for="fname">Empresa</label><br>
-				<input type="text" id="fname" name="fname" placeholder=""><br>
+				<input type="text" id="fname" name="empresa" placeholder=""><br>
 			<label for="country">Pais</label><br>
-				<select id="country" name="country">	
+				<select id="country" name="pais">	
 					<option value="australia">Argentina</option>
 					<option value="canada">Chile</option>
 					<option value="canada">Colombia</option>
@@ -56,12 +56,8 @@
 					<option value="usa">USA</option>
 					<option value="usa">Otro</option>
 				</select><br>
-				<label for="Asunto">Asunto</label><br>
-				<input type="text" id="Asunto" name="Asunto" placeholder=""><br>
-			<label for="Consulta">Consulta:</label><br>
-				<textarea id="subject" name="subject" placeholder="Escriba aqui sus consultas..." style="height:80px""width:120px"></textarea>
-				<br><br>
 			<input type="reset" value="Limpiar">
+			<input type="submit" value="Enviar">
 			<a href="form.html">AVANZAR</a>
 		</form> 
 	</div>

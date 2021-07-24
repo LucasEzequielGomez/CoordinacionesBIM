@@ -14,5 +14,13 @@
     "node-sass": "^6.0.1",
     "nodemon": "^2.0.12"
   },
-  "description": ""
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasEzequielGomez/CoordinacionesBIM.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LucasEzequielGomez/CoordinacionesBIM/issues"
+  },
+  "homepage": "https://github.com/LucasEzequielGomez/CoordinacionesBIM#readme"
 }
