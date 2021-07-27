@@ -2,6 +2,8 @@ model-viewer{
     display: block;
     position: relative;
     contain: strict;
+    margin: 70px;
     width: 85vw;
     height: 85vh;
+    border: 2px solid black;
   }

@@ -168,8 +168,10 @@ model-viewer {
   display: block;
   position: relative;
   contain: strict;
+  margin: 70px;
   width: 85vw;
-  height: 85vh; }
+  height: 85vh;
+  border: 2px solid black; }
 
 .wrapper {
   font-family: 'Staatliches', cursive;
@@ -273,8 +275,9 @@ div form {
   margin-bottom: 20%;
   padding: 10px 10px; }
 
-div form label {
-  width: 100%; }
+.form input {
+  height: 25px;
+  width: 98%; }
 
 input[type=submit], input[type=reset] {
   background-color: #FF962E;
@@ -288,8 +291,22 @@ input[type=submit], input[type=reset] {
 
 .aform {
   background-color: white;
-  margin: 20px 0px;
+  margin: 40px auto;
+  width: 80vw;
+  display: grid;
+  grid-template-columns: 1;
+  grid-gap: 20px;
+  grid-auto-rows: minmax(100px, auto);
   font-size: 1.5rem; }
+
+.aform .custom-control {
+  background-color: gainsboro;
+  line-height: 2; }
+
+#adjunto {
+  border: 2px solid black;
+  height: 200px;
+  width: auto; }
 
 @media (min-width: 320px) and (max-width: 519px) {
   .contact h1 {
@@ -348,16 +365,16 @@ ul li {
   position: fixed;
   width: 60px;
   height: 57px;
-  bottom: 72px;
-  right: 10px;
+  bottom: 35px;
+  right: 20px;
   background-color: #01B32B;
   color: #FFF;
   border-radius: 50px;
   text-align: center;
   font-size: 34px;
   box-shadow: 2px 2px 3px #999;
-  z-index: 6;
-}
+  z-index: 6; }
+
 @media (min-width: 320px) and (max-width: 519px) {
   footer {
     display: flex !important;
