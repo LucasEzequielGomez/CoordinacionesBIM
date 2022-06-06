@@ -1,0 +1,153 @@
+#northcoralplaza{
+  margin-top: 50px;
+}
+
+.building-casas {    /*Casas*/
+  display: grid;
+  grid-template-columns: repeat(4,22%);
+  grid-template-rows: 0.15fr, 0.8fr 0.8fr;
+  gap: 20px 20px;
+  margin: 30px 0;
+  padding: 20px 15px;
+  border-bottom: solid black;
+  grid-auto-flow: row;
+  align-content: center; 
+  grid-template-areas:
+    "title-building title-building description-building description-building"
+    "model-viewer-building model-viewer-building planta-baja vista-frente"
+    "model-viewer-building model-viewer-building planta-alta-pt-paz corte";
+}
+
+.building-edificios{    /*Edificio en Altura*/
+  display: grid;
+  grid-template-columns: repeat(5,18%);
+  grid-template-rows: auto auto auto;
+  gap: 20px 20px;
+  margin: 30px 0;
+  padding: 20px 15px;
+  border-bottom: solid black;
+  grid-auto-flow: row;
+  align-content: center;
+  grid-template-areas:
+    "title-building title-building description-building description-building description-building"
+    "model-viewer-building model-viewer-building planta-baja vista-frente corte"
+    "model-viewer-building model-viewer-building planta-alta-pt-paz vista-frente corte";
+}
+
+.title-building {
+  grid-area: title-building;
+  font-family: $font-title;
+}
+.model-viewer-building {
+  grid-area: model-viewer-building;
+  align-self: center;
+  justify-self: center;
+  img {
+    max-height: 500px;
+    max-width: 100%;
+    width: revert;
+  }
+}
+.planta-baja { 
+  grid-area: planta-baja; 
+  align-self: center;
+  justify-self: center;
+}
+.planta-alta-pt-paz { 
+  grid-area: planta-alta-pt-paz;
+  align-self: center;
+  justify-self: center;
+}
+.vista-frente { 
+  grid-area: vista-frente; 
+  align-self: center;
+  justify-self: center; 
+}
+.corte { 
+  grid-area: corte; 
+  align-self: center;
+  justify-self: center;
+}
+.description-building {
+  grid-area: description-building;
+  align-self: center; 
+  font-family: $font-parraf;
+}
+
+@media (min-width:520px) and (max-width:1024px){
+  .building-casas {    /*en pantallas mas chicas de 900 y algo*/
+    display: grid;
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 0.25fr 1fr 0.75fr 0.75fr; 
+    row-gap: 10px;
+    margin-top: 30px;
+    width: 95%;
+    margin: auto;
+    grid-auto-flow: row;
+    align-content: center;
+    grid-template-areas:
+      "title-building description-building"
+      "model-viewer-building model-viewer-building"
+      "planta-baja planta-alta-pt-paz"
+      "vista-frente corte"; 
+  }
+
+  .building-edificios{    /*Edificio en Altura*/
+    display: grid;
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 0.25fr 1fr 0.75fr 0.75fr; 
+    row-gap: 5px;
+    margin-top: 30px;
+    width: 95%;
+    margin: auto;
+    grid-auto-flow: row;
+    align-content: center;
+    grid-template-areas:
+      "title-building description-building"
+      "model-viewer-building model-viewer-building"
+      "planta-baja planta-alta-pt-paz"
+      "vista-frente corte"; 
+  }
+}
+
+@media(max-width:519px){
+  .building-casas {    /*en pantallas mas chicas de 900 y algo*/
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    padding: 40px 0;
+    width: 95%;
+    margin: auto;
+    grid-auto-flow: row;
+    align-content: center;
+    grid-template-areas:
+      "title-building"
+      "description-building"
+      "model-viewer-building"
+      "planta-baja"
+      "planta-alta-pt-paz"
+      "vista-frente"
+      "corte";
+  }
+
+  .building-edificios{    /*Edificio en Altura*/
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;    
+    padding: 40px 0;
+    width: 95%;
+    margin: auto;
+    grid-auto-flow: row;
+    align-content: center;
+    grid-template-areas:
+      "title-building"
+      "description-building"
+      "model-viewer-building"
+      "planta-baja"
+      "planta-alta-pt-paz"
+      "vista-frente" 
+      "corte"
+  }
+}

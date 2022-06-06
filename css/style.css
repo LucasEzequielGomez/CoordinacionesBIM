@@ -1,117 +1,558 @@
-body {
-  background-color: gainsboro;
-  font-family: helvetica;
-  margin: 0px; }
+/*/ variables de colores /*/
+/*/ variables de textos /*/
+/* fonts */
+/* variables en general*/
+.main-contact {
+  text-align: center;
+  font-family: "Staatliches", cursive;
+  padding: 50px 20px;
+  background-color: #6CA7F6; }
 
-.navegador-Fixed ul {
+.contacto {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(3);
+  gap: 50px;
+  padding: 50px;
+  justify-items: center;
+  grid-auto-flow: row;
+  grid-template-areas: "contact form-data" "form-service form-meters" "form-files form-files";
+  background-color: #6CA7F6;
+  font-family: "Open Sans", sans-serif; }
+
+.contact {
+  grid-area: contact;
+  font-size: 1.5rem;
+  width: 35vw;
+  margin: 15vh; }
+  .contact h2 {
+    font-family: "Staatliches", cursive;
+    font-size: 3.5rem; }
+  .contact p {
+    font-size: 2rem;
+    line-height: 1; }
+
+.form-data {
+  grid-area: form-data;
+  background-color: #ECF0F1;
+  width: 35vw;
+  margin: 15vh;
+  padding: 15px;
+  border-radius: 15px; }
+  .form-data input {
+    width: 100%; }
+
+.form-service {
+  grid-area: form-service;
+  background-color: #ECF0F1;
+  width: 40vw;
+  height: 325px;
+  border-radius: 15px; }
+  .form-service h4 {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    margin: 10px; }
+  .form-service div {
+    margin-left: 20px; }
+  .form-service label {
+    font-size: 1rem;
+    line-height: 2; }
+
+.form-meters {
+  grid-area: form-meters;
+  background-color: #ECF0F1;
+  width: 40vw;
+  height: 325px;
+  border-radius: 15px; }
+  .form-meters h4 {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    margin: 10px; }
+  .form-meters div {
+    margin-left: 20px; }
+  .form-meters label {
+    font-size: 1rem;
+    line-height: 2.5; }
+
+.form-files {
+  grid-area: form-files;
+  background-color: #ECF0F1;
+  width: 90vw;
+  height: 25vh;
+  border-radius: 15px; }
+  .form-files h4 {
+    margin: 10px; }
+  .form-files div .custom-file {
+    margin: 10px;
+    width: 60%; }
+
+@media (max-width: 519px) {
+  .contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5);
+    gap: 10px;
+    padding: 15px;
+    justify-items: center;
+    grid-auto-flow: row;
+    grid-template-areas: "contact" "form-data" "form-service" "form-meters" "form-files";
+    background-color: #6CA7F6;
+    font-family: "Open Sans", sans-serif; }
+  .contact {
+    grid-area: contact;
+    font-size: 1.5rem;
+    width: 85vw;
+    margin: 15px;
+    margin-top: 50px; }
+    .contact h2 {
+      font-family: "Staatliches", cursive;
+      font-size: 3.5rem; }
+    .contact p {
+      font-size: 2rem;
+      line-height: 1; }
+  .form-data {
+    grid-area: form-data;
+    background-color: #ECF0F1;
+    width: 85vw;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 15px; }
+    .form-data input {
+      width: 100%; }
+  .form-service {
+    grid-area: form-service;
+    background-color: #ECF0F1;
+    width: 85vw;
+    height: auto;
+    border-radius: 15px; }
+    .form-service h4 {
+      font-family: "Open Sans", sans-serif;
+      text-align: center;
+      margin: 10px; }
+    .form-service div {
+      margin-left: 20px; }
+    .form-service label {
+      font-size: 1rem;
+      line-height: 2; }
+  .form-meters {
+    grid-area: form-meters;
+    background-color: #ECF0F1;
+    width: 85vw;
+    height: auto;
+    border-radius: 15px; }
+    .form-meters h4 {
+      font-family: "Open Sans", sans-serif;
+      text-align: center;
+      margin: 10px; }
+    .form-meters div {
+      margin-left: 5%; }
+    .form-meters label {
+      font-size: 1rem;
+      line-height: 2.5; }
+  .form-files {
+    grid-area: form-files;
+    background-color: #ECF0F1;
+    width: 85vw;
+    height: 240px;
+    border-radius: 15px; }
+    .form-files h4 {
+      margin: 10px; }
+    .form-files div .custom-file {
+      margin: 10px;
+      width: 60%; } }
+
+/*/ variables de colores /*/
+/*/ variables de textos /*/
+/* fonts */
+/* variables en general*/
+footer {
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-image: linear-gradient(to bottom, #6CA7F6, #ECF0F1);
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10vw;
+  padding-bottom: 30px;
+  text-align: center;
+  padding-bottom: 2rem;
+  font-family: 'Staatliches', cursive;
+  list-style: none;
+  color: #212529; }
+  footer li {
+    list-style: none;
+    font-size: 1rem;
+    line-height: 2;
+    color: #212529; }
+    footer li a {
+      color: #212529; }
+  footer #social-contact p {
+    font-family: "Open Sans", sans-serif;
+    color: #212529;
+    line-height: 1;
+    letter-spacing: 0; }
+  footer img {
+    width: 24px;
+    height: 24px; }
+
+@media (max-width: 519px) {
+  footer {
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to bottom, #6CA7F6, #ECF0F1);
+    align-items: center;
+    box-sizing: border-box;
+    padding: 30px 30px;
+    text-align: center;
+    padding-bottom: 2rem;
+    font-family: 'Staatliches', cursive;
+    list-style: none;
+    margin: auto;
+    justify-content: center; }
+    footer ul {
+      padding-left: 20vw;
+      padding-right: 20vw; }
+    footer img {
+      width: 32px;
+      height: 32px; } }
+
+/*/ variables de colores /*/
+/*/ variables de textos /*/
+/* fonts */
+/* variables en general*/
+body {
+  background-color: #ECF0F1;
+  font-family: helvetica;
+  margin-top: 50px; }
+
+.home {
+  background-image: linear-gradient(to bottom, #6CA7F6, #ECF0F1); }
+  .home .inicio {
+    font-family: "Staatliches", cursive;
+    font-size: 2rem;
+    padding-top: 33vh;
+    padding-left: 10%;
+    padding-bottom: 33vh; }
+  .home h2 {
+    font-size: 200%;
+    color: #212529; }
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+  top: 30px; }
+  .carousel-caption h2 {
+    color: #212529;
+    font-family: "Staatliches", cursive; }
+  .carousel-caption p {
+    color: #212529; }
+
+.carousel-item {
+  height: 32rem;
+  background-color: #777; }
+  .carousel-item .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 32rem; }
+  .carousel-item img {
+    min-width: 825px;
+    bottom: 0px; }
+
+#title {
+  text-align: center;
+  background-color: #ECF0F1;
+  font-family: "Staatliches", cursive;
+  font-size: 3rem;
+  padding-top: 40px;
+  margin-bottom: 0; }
+
+.estadisticas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 90px;
+  text-align: center;
+  justify-content: space-around;
+  padding: 60px;
+  background-color: #ECF0F1; }
+  .estadisticas .contador {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2rem; }
+    .estadisticas .contador img {
+      width: 110px;
+      border: 15px; }
+    .estadisticas .contador h2 {
+      font-family: 1.5rem;
+      font-size: 1.5rem; }
+    .estadisticas .contador h3 {
+      text-align: center; }
+
+.software {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  text-align: center;
+  justify-content: space-around;
+  padding: 40px 30px;
+  background-color: #ECF0F1; }
+  .software .logosautodesk {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2rem; }
+    .software .logosautodesk img {
+      width: 70px;
+      border: 15px; }
+    .software .logosautodesk h2 {
+      font-family: "Staatliches", cursive;
+      font-size: 1.5rem; }
+    .software .logosautodesk h3 {
+      text-align: center;
+      font-size: 1.5rem; }
+
+@media (min-width: 320px) and (max-width: 519px) {
+  .inicio {
+    font-family: "Staatliches", cursive;
+    font-size: 150%;
+    padding-top: 33vh;
+    padding-left: 10%;
+    padding-bottom: 45vh; }
+    .inicio h2 {
+      font-size: 120%;
+      color: #111; }
+    .inicio p {
+      font-size: large; } }
+
+@media (min-width: 520px) {
+  /* Asi lo veo en mi celu*/
+  .inicio {
+    font-family: "Staatliches", cursive;
+    padding-top: 33vh;
+    padding-left: 10%;
+    padding-bottom: 33vh; }
+    .inicio h2 {
+      font-size: 200%;
+      color: #111; } }
+
+@media (min-width: 728px) {
+  .inicio {
+    font-family: "Staatliches", cursive;
+    font-size: 200%;
+    padding-top: 33vh;
+    padding-left: 10%;
+    padding-bottom: 33vh; }
+    .inicio h2 {
+      font-size: 200%;
+      color: #111; } }
+
+#northcoralplaza {
+  margin-top: 50px; }
+
+.building-casas {
+  /*Casas*/
+  display: grid;
+  grid-template-columns: repeat(4, 22%);
+  grid-template-rows: 0.15fr, 0.8fr 0.8fr;
+  gap: 20px 20px;
+  margin: 30px 0;
+  padding: 20px 15px;
+  border-bottom: solid black;
+  grid-auto-flow: row;
+  align-content: center;
+  grid-template-areas: "title-building title-building description-building description-building" "model-viewer-building model-viewer-building planta-baja vista-frente" "model-viewer-building model-viewer-building planta-alta-pt-paz corte"; }
+
+.building-edificios {
+  /*Edificio en Altura*/
+  display: grid;
+  grid-template-columns: repeat(5, 18%);
+  grid-template-rows: auto auto auto;
+  gap: 20px 20px;
+  margin: 30px 0;
+  padding: 20px 15px;
+  border-bottom: solid black;
+  grid-auto-flow: row;
+  align-content: center;
+  grid-template-areas: "title-building title-building description-building description-building description-building" "model-viewer-building model-viewer-building planta-baja vista-frente corte" "model-viewer-building model-viewer-building planta-alta-pt-paz vista-frente corte"; }
+
+.title-building {
+  grid-area: title-building;
+  font-family: "Staatliches", cursive; }
+
+.model-viewer-building {
+  grid-area: model-viewer-building;
+  align-self: center;
+  justify-self: center; }
+  .model-viewer-building img {
+    max-height: 500px;
+    max-width: 100%;
+    width: revert; }
+
+.planta-baja {
+  grid-area: planta-baja;
+  align-self: center;
+  justify-self: center; }
+
+.planta-alta-pt-paz {
+  grid-area: planta-alta-pt-paz;
+  align-self: center;
+  justify-self: center; }
+
+.vista-frente {
+  grid-area: vista-frente;
+  align-self: center;
+  justify-self: center; }
+
+.corte {
+  grid-area: corte;
+  align-self: center;
+  justify-self: center; }
+
+.description-building {
+  grid-area: description-building;
+  align-self: center;
+  font-family: "Open Sans", sans-serif; }
+
+@media (min-width: 520px) and (max-width: 1024px) {
+  .building-casas {
+    /*en pantallas mas chicas de 900 y algo*/
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.25fr 1fr 0.75fr 0.75fr;
+    row-gap: 10px;
+    margin-top: 30px;
+    width: 95%;
+    margin: auto;
+    grid-auto-flow: row;
+    align-content: center;
+    grid-template-areas: "title-building description-building" "model-viewer-building model-viewer-building" "planta-baja planta-alta-pt-paz" "vista-frente corte"; }
+  .building-edificios {
+    /*Edificio en Altura*/
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.25fr 1fr 0.75fr 0.75fr;
+    row-gap: 5px;
+    margin-top: 30px;
+    width: 95%;
+    margin: auto;
+    grid-auto-flow: row;
+    align-content: center;
+    grid-template-areas: "title-building description-building" "model-viewer-building model-viewer-building" "planta-baja planta-alta-pt-paz" "vista-frente corte"; } }
+
+@media (max-width: 519px) {
+  .building-casas {
+    /*en pantallas mas chicas de 900 y algo*/
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    padding: 40px 0;
+    width: 95%;
+    margin: auto;
+    grid-auto-flow: row;
+    align-content: center;
+    grid-template-areas: "title-building" "description-building" "model-viewer-building" "planta-baja" "planta-alta-pt-paz" "vista-frente" "corte"; }
+  .building-edificios {
+    /*Edificio en Altura*/
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    padding: 40px 0;
+    width: 95%;
+    margin: auto;
+    grid-auto-flow: row;
+    align-content: center;
+    grid-template-areas: "title-building" "description-building" "model-viewer-building" "planta-baja" "planta-alta-pt-paz" "vista-frente"  "corte"; } }
+
+/*/ variables de colores /*/
+/*/ variables de textos /*/
+/* fonts */
+/* variables en general*/
+.navbar {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #343a40; }
+  .navbar li {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Staatliches', cursive; }
 
-.navegador-Fixed li {
-  float: right; }
-
-nav ul .Volver {
-  float: left; }
-
-li a {
-  display: block;
-  color: white;
+/*/ variables de colores /*/
+/*/ variables de textos /*/
+/* fonts */
+/* variables en general*/
+#text {
+  grid-column: auto;
+  grid-row: auto;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-family: 'Staatliches', cursive; }
-
-.home {
-  background-image: linear-gradient(to bottom, #FF962E, gainsboro); }
-
-.inicio {
-  font-family: 'Staatliches', cursive;
-  font-size: 200%;
-  padding-top: 33vh;
-  padding-left: 10%;
-  padding-bottom: 33vh; }
-
-.home .inicio h1 {
-  font-size: 200%;
-  color: #111; }
-
-/* CUSTOMIZE THE CAROUSEL---------------- */
-.carousel {
-  margin-bottom: 4rem; }
-
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10; }
-
-/* Declare heights because of positioning of img element */
-.carousel-item {
-  height: 32rem;
-  background-color: #777; }
-
-.carousel-item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 32rem; }
+  background-color: #ECF0F1;
+  border-radius: 15px;
+  padding: 10px 15px; }
+  #text h2 {
+    font-size: 1.2rem;
+    justify-content: center; }
+  #text h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem; }
 
 @media (min-width: 320px) and (max-width: 519px) {
-  .inicio {
-    font-family: 'Staatliches', cursive;
-    font-size: 150%;
-    padding-top: 33vh;
-    padding-left: 10%;
-    padding-bottom: 45vh; }
-  .home .inicio h1 {
-    font-size: 120%;
-    color: #111; }
-  .inicio p {
-    font-size: large; } }
+  .service {
+    font-family: "Staatliches", cursive;
+    display: grid;
+    background-color: #6CA7F6;
+    margin-top: 55px;
+    padding: 10px 10px;
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+    grid-auto-rows: minmax(100px, auto);
+    padding-bottom: 60px; } }
 
 @media (min-width: 520px) {
   /* Asi lo veo en mi celu*/
-  .inicio {
-    font-family: 'Staatliches', cursive;
-    padding-top: 33vh;
-    padding-left: 10%;
-    padding-bottom: 33vh; }
-  .home .inicio h1 {
-    font-size: 200%;
-    color: #111; } }
+  .service {
+    font-family: "Staatliches", cursive;
+    display: grid;
+    background-color: #6CA7F6;
+    padding: 80px 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    grid-auto-rows: minmax(100px, auto); } }
 
-@media (min-width: 728px) {
-  .inicio {
-    font-family: 'Staatliches', cursive;
-    font-size: 200%;
-    padding-top: 33vh;
-    padding-left: 10%;
-    padding-bottom: 33vh; }
-  .home .inicio h1 {
-    font-size: 200%;
-    color: #111; } }
+@media (min-width: 1024px) {
+  .service {
+    font-family: "Staatliches", cursive;
+    display: grid;
+    background-color: #6CA7F6;
+    margin-top: 50px;
+    padding: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    grid-auto-rows: minmax(100px, auto); } }
 
-.contenedor {
-  width: 100%;
-  margin: auto; }
+/*/ variables de colores /*/
+/*/ variables de textos /*/
+/* fonts */
+/* variables en general*/
+.renders {
+  background-color: #6CA7F6;
+  margin-top: 50px;
+  padding-top: 10px; }
+  .renders .contenedor {
+    display: grid;
+    margin: auto;
+    width: 95%;
+    grid-template-columns: repeat(4, 25%); }
+    .renders .contenedor .render__columna {
+      position: relative;
+      background-color: #ECF0F1;
+      margin: 5px;
+      border-radius: 8px; }
 
 img {
   width: 100%; }
-
-.render__columna {
-  background-color: #00ff88;
-  margin: 5px; }
-
-.contenedor {
-  width: 95%; }
-
-.renders .contenedor {
-  display: grid;
-  margin: auto;
-  grid-template-columns: repeat(4, 25%); }
 
 .overlay {
   position: absolute;
@@ -123,14 +564,15 @@ img {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: lightgrey; }
+  background-color: #ECF0F1;
+  border-radius: 8px; }
 
-.container:hover .overlay {
-  opacity: .7; }
+.render__columna:hover .overlay {
+  opacity: .8; }
 
-.texthover {
-  color: black;
-  font-size: 20px;
+.text {
+  color: #212529;
+  font-size: 1.5rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -158,238 +600,7 @@ img {
     grid-template-columns: repeat(3, 33.33%); } }
 
 @media (min-width: 1200px) {
-  /* Asi lo veo en la notebook*/
   .renders .contenedor {
     display: grid;
     margin: auto;
     grid-template-columns: repeat(4, 25%); } }
-
-model-viewer {
-  display: block;
-  position: relative;
-  contain: strict;
-  margin: 70px;
-  width: 85vw;
-  height: 85vh;
-  border: 2px solid black; }
-
-.wrapper {
-  font-family: 'Staatliches', cursive;
-  display: grid;
-  background-color: gainsboro;
-  padding-right: 20px;
-  padding-left: 20px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 70px;
-  grid-auto-rows: minmax(100px, auto);
-  padding-bottom: 60px; }
-
-#text {
-  grid-column: auto;
-  grid-row: auto;
-  text-align: center; }
-
-.wrapper h2 {
-  font-size: 140%;
-  justify-content: center; }
-
-.wrapper h3 {
-  font-weight: normal; }
-
-@media (min-width: 320px) and (max-width: 519px) {
-  .wrapper {
-    font-family: 'Staatliches', cursive;
-    display: grid;
-    background-color: gainsboro;
-    padding-right: 20px;
-    padding-left: 20px;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 70px;
-    grid-auto-rows: minmax(100px, auto);
-    padding-bottom: 60px; } }
-
-@media (min-width: 520px) {
-  /* Asi lo veo en mi celu*/
-  .wrapper {
-    font-family: 'Staatliches', cursive;
-    display: grid;
-    background-color: gainsboro;
-    padding-right: 20px;
-    padding-left: 20px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 70px;
-    grid-auto-rows: minmax(100px, auto);
-    padding-bottom: 60px; } }
-
-@media (min-width: 1024px) {
-  .wrapper {
-    font-family: 'Staatliches', cursive;
-    display: grid;
-    background-color: gainsboro;
-    padding-right: 20px;
-    padding-left: 20px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 70px;
-    grid-auto-rows: minmax(100px, auto);
-    padding-bottom: 60px; } }
-
-.contact {
-  font-family: 'Staatliches', cursive;
-  background-image: linear-gradient(to bottom, #48E8A0, gainsboro);
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around; }
-
-.contact h1 {
-  font-size: 400%; }
-
-.contact h2 {
-  font-family: helvetica;
-  max-width: 30vw;
-  font-size: 175%; }
-
-#contact {
-  font-family: 'Staatliches', cursive;
-  background-image: linear-gradient(to bottom, #48E8A0, gainsboro);
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around; }
-
-#contact h1 {
-  font-size: 400%; }
-
-#contact h2 {
-  font-family: helvetica;
-  max-width: 35vw;
-  font-size: 150%; }
-
-div form {
-  background-color: #7848e8;
-  font-size: 1.5rem;
-  width: 30vw;
-  margin-top: 20%;
-  margin-bottom: 20%;
-  padding: 10px 10px; }
-
-.form input {
-  height: 25px;
-  width: 98%; }
-
-input[type=submit], input[type=reset] {
-  background-color: #FF962E;
-  border: none;
-  color: white;
-  padding: 5px 15px;
-  text-decoration: none;
-  margin: 4px;
-  margin-left: 4px;
-  cursor: pointer; }
-
-.aform {
-  background-color: white;
-  margin: 40px auto;
-  width: 80vw;
-  display: grid;
-  grid-template-columns: 1;
-  grid-gap: 20px;
-  grid-auto-rows: minmax(100px, auto);
-  font-size: 1.5rem; }
-
-.aform .custom-control {
-  background-color: gainsboro;
-  line-height: 2; }
-
-#adjunto {
-  border: 2px solid black;
-  height: 200px;
-  width: auto; }
-
-@media (min-width: 320px) and (max-width: 519px) {
-  .contact h1 {
-    font-size: 300%; }
-  .contact h2 {
-    font-family: helvetica;
-    max-width: 85vw;
-    font-size: 150%; }
-  div .form {
-    width: 90%; }
-  div form {
-    background-color: #7848e8;
-    font-size: 120%;
-    width: auto;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    padding: 10px 10px; }
-  div form label {
-    width: 100%; } }
-
-@media (min-width: 520px) {
-  .contact {
-    font-family: 'Staatliches', cursive;
-    background-image: linear-gradient(to bottom, #48E8A0, gainsboro);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around; }
-  .contact h1 {
-    font-size: 400%; }
-  .contact h2 {
-    font-family: helvetica;
-    max-width: 35vw;
-    font-size: 175%; } }
-
-footer {
-  display: flex !important;
-  flex-direction: row;
-  flex-wrap: wrap;
-  background-image: linear-gradient(to bottom, gainsboro, #68A4C4);
-  justify-content: space-between;
-  align-items: center;
-  box-sizing: border-box;
-  padding: 30px 10vw;
-  padding-bottom: 30px;
-  text-align: center;
-  padding-bottom: 2rem;
-  font-family: 'Staatliches', cursive;
-  list-style: none; }
-
-ul li {
-  list-style: none; }
-
-.float {
-  position: fixed;
-  width: 60px;
-  height: 57px;
-  bottom: 35px;
-  right: 20px;
-  background-color: #01B32B;
-  color: #FFF;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 34px;
-  box-shadow: 2px 2px 3px #999;
-  z-index: 6; }
-
-@media (min-width: 320px) and (max-width: 519px) {
-  footer {
-    display: flex !important;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-image: linear-gradient(to bottom, gainsboro, #68A4C4);
-    align-items: center;
-    box-sizing: border-box;
-    padding: 30px 30px;
-    text-align: center;
-    padding-bottom: 2rem;
-    font-family: 'Staatliches', cursive;
-    list-style: none;
-    margin: auto;
-    justify-content: center; }
-  footer ul {
-    padding-left: 20vw;
-    padding-right: 20vw; } }

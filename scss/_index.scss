@@ -1,0 +1,153 @@
+@import "variables";
+
+body{
+  background-color: $colorc;
+  font-family: helvetica;
+  margin-top: 50px;
+}
+
+.home{
+  background-image: linear-gradient(to bottom, $colorprincipal, $colorc);
+  .inicio{
+    font-family: $font-title;
+    font-size: 2rem;
+    padding-top: 33vh;
+    padding-left: 10%;
+    padding-bottom: 33vh;
+  }
+  h2 {
+    font-size: 200%;
+    color: $color-text;
+  }
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+  top: 30px;
+  h2{
+    color: $color-text;
+    font-family: $font-title;
+  }
+  p{
+    color: $color-text;
+  }
+}
+.carousel-item {
+  height: 32rem;
+  background-color: #777;
+  .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 32rem;
+  }
+  img {
+    min-width: 825px;
+    bottom: 0px;
+  }
+}
+
+#title{
+  text-align: center;
+  background-color: $colorc;
+  font-family: $font-title;
+  font-size: 3rem;
+  padding-top: 40px;
+  margin-bottom: 0;
+}
+
+.estadisticas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 90px;
+  text-align: center;
+  justify-content: space-around;
+  padding: 60px;
+  background-color: $colorc;
+  .contador {
+    font-family: $font-parraf;
+    font-size: $texto;
+    img{
+      width: 110px;
+      border: $border1;
+    }
+    h2{
+      font-family: $titulos;
+      font-size: $titulos
+    }
+    h3{
+      text-align: center;
+    }
+  }
+}
+
+.software {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  text-align: center;
+  justify-content: space-around;
+  padding: 40px 30px;
+  background-color: $colorc;
+  .logosautodesk {
+    font-family: $font-parraf;
+    font-size: $texto;
+    img{
+      width: 70px;
+      border: $border1;
+    }
+    h2{
+      font-family: $font-title;
+      font-size: $titulos
+    }
+    h3{
+      text-align: center;
+      font-size: $titulos;
+    }
+  }
+}
+
+  @media(min-width:320px) and (max-width:519px){
+    .inicio{
+      font-family: $font-title;
+      font-size: 150%;
+      padding-top: 33vh;
+      padding-left: 10%;
+      padding-bottom: 45vh;
+      h2{
+        font-size: 120%;
+        color: #111;
+      }
+      p{
+        font-size: large;
+      }
+    }
+  }
+
+  @media(min-width:520px){  /* Asi lo veo en mi celu*/
+    .inicio{
+      font-family: $font-title;
+      padding-top: 33vh;
+      padding-left: 10%;
+      padding-bottom: 33vh;
+      h2{
+        font-size: 200%;
+        color: #111;
+      }
+    }
+  }
+
+  @media(min-width:728px){
+    .inicio{
+      font-family: $font-title;
+      font-size: 200%;
+      padding-top: 33vh;
+      padding-left: 10%;
+      padding-bottom: 33vh;
+      h2{
+        font-size: 200%;
+        color: #111;
+      }
+    }
+  }

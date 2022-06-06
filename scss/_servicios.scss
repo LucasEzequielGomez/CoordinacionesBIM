@@ -1,0 +1,57 @@
+@import "variables"; 
+
+#text {
+  grid-column: auto;
+  grid-row: auto;
+  text-align: center;
+  background-color: $colorc;
+  border-radius: $border1;
+  padding: 10px 15px;
+  h2{
+    font-size: $texto;
+    justify-content: center;
+  }
+  h3{
+    font-family: $font-parraf;
+    font-size: $parrafos;
+  }
+}
+
+@media(min-width:320px) and (max-width:519px){
+    .service {
+        font-family: $font-title;
+        display: grid;
+        background-color: $colorprincipal;
+        margin-top: 55px;
+        padding: 10px 10px;
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+        grid-auto-rows: minmax(100px, auto);
+        padding-bottom: 60px;
+    }
+}
+
+@media(min-width:520px){  /* Asi lo veo en mi celu*/
+    .service {
+        font-family: $font-title;
+        display: grid;
+        background-color: $colorprincipal;
+        padding: 80px 20px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        grid-auto-rows: minmax(100px, auto);
+    }
+}
+
+@media(min-width:1024px){
+  .service {
+    font-family: $font-title;
+    display: grid;
+    background-color: $colorprincipal;
+    margin-top: 50px;
+    padding: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+}

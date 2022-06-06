@@ -1,0 +1,210 @@
+@import "variables";
+
+.main-contact{
+  text-align: center;
+  font-family: $font-title;
+  padding: 50px 20px;
+  background-color: $colorprincipal;
+}
+
+.contacto {
+  display: grid;
+  grid-template-columns: repeat(2,50%);
+  grid-template-rows: repeat(3);
+  gap: 50px;
+  padding: 50px;
+  justify-items: center;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "contact form-data"
+    "form-service form-meters"
+    "form-files form-files";
+  background-color: $colorprincipal;
+  font-family: $font-parraf;
+}
+
+.contact { 
+  grid-area: contact; 
+  font-size: 1.5rem;
+  width: 35vw;
+  margin: 15vh;
+  h2{
+    font-family: $font-title;
+    font-size: 3.5rem;
+  }
+  p{
+    font-size: 2rem;
+    line-height: 1;
+  }
+}
+
+.form-data { 
+  grid-area: form-data; 
+  background-color: $colorc;
+  width: 35vw;
+  margin: 15vh;
+  padding: 15px;
+  border-radius: $border1;
+  input {
+    width: 100%;
+  }
+}
+
+.form-service { 
+  grid-area: form-service; 
+  background-color: $colorc;
+  width: 40vw;
+  height: 325px;
+  border-radius: $border1;
+  h4{
+    font-family: $font-parraf;
+    text-align: center;
+    margin: 10px;
+  }
+  div {
+    margin-left: 20px;
+  }
+  label {
+    font-size: $parrafos;
+    line-height: 2;
+  }
+}
+
+.form-meters { 
+  grid-area: form-meters; 
+  background-color: $colorc;
+  width: 40vw;
+  height: 325px;
+  border-radius: $border1;
+  h4{
+    font-family: $font-parraf;
+    text-align: center;
+    margin: 10px;
+  }
+  div {
+    margin-left: 20px;
+  }
+  label {
+    font-size: $parrafos;
+    line-height: 2.5;
+  }
+}
+
+.form-files { 
+  grid-area: form-files; 
+  background-color: $colorc;
+  width: 90vw;
+  height: 25vh;
+  border-radius: $border1;
+  h4 {
+    margin: 10px;
+  }
+  div .custom-file {
+    margin: 10px;
+    width: 60%;
+  }
+}
+
+@media (max-width:519px) {
+  .contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5);
+    gap: 10px;
+    padding: 15px;
+    justify-items: center;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "contact"
+      "form-data"
+      "form-service"
+      "form-meters"
+      "form-files";
+    background-color: $colorprincipal;
+    font-family: $font-parraf;
+  }
+
+  .contact { 
+    grid-area: contact; 
+    font-size: 1.5rem;
+    width: 85vw;
+    margin: 15px;
+    margin-top: 50px;
+    h2{
+      font-family: $font-title;
+      font-size: 3.5rem;
+    }
+    p{
+      font-size: 2rem;
+      line-height: 1;
+    }
+  }
+  
+  .form-data { 
+    grid-area: form-data; 
+    background-color: $colorc;
+    width: 85vw;
+    margin: 15px;
+    padding: 15px;
+    border-radius: $border1;
+    input {
+      width: 100%;
+    }
+  }
+  
+  .form-service { 
+    grid-area: form-service; 
+    background-color: $colorc;
+    width: 85vw;
+    height: auto;
+    border-radius: $border1;
+    h4{
+      font-family: $font-parraf;
+      text-align: center;
+      margin: 10px;
+    }
+    div {
+      margin-left: 20px;
+    }
+    label {
+      font-size: $parrafos;
+      line-height: 2;
+    }
+  }
+  
+  .form-meters { 
+    grid-area: form-meters; 
+    background-color: $colorc;
+    width: 85vw;
+    height: auto;
+    border-radius: $border1;
+    h4{
+      font-family: $font-parraf;
+      text-align: center;
+      margin: 10px;
+    }
+    div{
+      margin-left: 5%;
+    }
+    label {
+      font-size: $parrafos;
+      line-height: 2.5;
+    }
+  }
+  
+  .form-files { 
+    grid-area: form-files; 
+    background-color: $colorc;
+    width: 85vw;
+    height: 240px;
+    border-radius: $border1;
+    h4 {
+      margin: 10px;
+    }
+    div .custom-file {
+      margin: 10px;
+      width: 60%;
+    }
+  }
+  
+}
